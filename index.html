@@ -11,8 +11,9 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      width: 100%;
+      height: auto;
         }
-
     * {box-sizing: border-box}
     body {font-family: Verdana, sans-serif; margin:0}
     .mySlides {display: none}
@@ -106,7 +107,11 @@ div.a{text-indent: 30px;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-
+a {
+color: white;
+background-color: transparent;
+text-decoration: underline;
+}
     a:visited {
       color: white;
       background-color: transparent;
@@ -128,7 +133,7 @@ div.a{text-indent: 30px;}
     <div style = "background-color: black">
       <a href=index.html><img src="pngTransparent.png" style="width:12.5%;"></a>
       <div class = "container">
-          <div><h2><font color="white"><a href="index.html">HOME</a></h2></div><div><h2><a href="games.html">GAMES</a></div></h2><div><h2><a href="assets.html">ASSETS</a></div></h2><div><h2><a href="contact.html">CONTACT</a></font></h2></div>
+          <div><h2><font style="color:white"><a href="index.html">HOME</a></h2></div><div><h2><a href="games.html">GAMES</a></div></h2><div><h2><a href="assets.html">ASSETS</a></div></h2><div><h2><a href="contact.html">CONTACT</a></font></h2></div>
       </div>
   </div>
     <br></br>
@@ -138,20 +143,20 @@ div.a{text-indent: 30px;}
 
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="BagOfHolding.jpg" style="width:100%">
-      <div class="text">GMTK 2019 wrapped up at the start of Aug 2019. I received an average Raw Score of 4.16</div>
+      <img src="BagOfHolding.jpg" width="600" height="400">
+      <div class="text">GMTK 2019 wrapped up at the start of Aug 2019. It received an average Raw Score of 4.16</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="Mooooo.png" style="width:100%">
-      <div class="text">Grab a friend and try to abduct cows! UFO Mooooo! now released!</div>
+      <img src="UFOMooooo2.jpg" width="600" height="400">
+      <div class="text">Grab a friend and abduct some cows! UFO Mooooo! now available!</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="CP Transparent.jpg" style="width:100%">
-      <div class="text">New Logo. New Website. Welcome to Chaotic Play!</div>
+      <img src="CP Transparent2.jpg" width="600" height="400">
+      <div class="text">Welcome to Chaotic Play! New Logo. New Website. </div>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

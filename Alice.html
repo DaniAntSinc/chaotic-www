@@ -10,7 +10,28 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    height: auto;
       }
+
+      .videoWrapper {
+    	position: relative;
+    	padding-bottom: 56.25%; /* 16:9 */
+    	padding-top: 25px;
+    	height: auto;
+    }
+    .videoWrapper iframe {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: auto;
+    }
+    a {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    }
   * {
     box-sizing: border-box;
     }
@@ -49,7 +70,7 @@
     <div style = "background-color: black">
       <a href=index.html><img src="pngTransparent.png" style="width:12.5%;"></a>
       <div class = "container">
-          <div><h2><font color="white"><a href="index.html">HOME</a></h2></div><div><h2><a href="games.html">GAMES</a></div></h2><div><h2><a href="assets.html">ASSETS</a></div></h2><div><h2><a href="contact.html">CONTACT</a></font></h2></div>
+          <div><h2><font style="color:white"><a href="index.html">HOME</a></h2></div><div><h2><a href="games.html">GAMES</a></div></h2><div><h2><a href="assets.html">ASSETS</a></div></h2><div><h2><a href="contact.html">CONTACT</a></font></h2></div>
       </div>
   </div>
     <br></br>
@@ -65,7 +86,7 @@
       <div class="column">
         <center><font-family = "Verdana"><h1><font size = "10">ALICE</h1></font></center>
         <center><font color = "grey"><h3>Get Now:</h3></font></center>
-        <h2 style="background-color: black"><font color="white"><a href=https://chaoticplay.itch.io/alice target="_blank">Save Wonderland</a></h2></font>
+        <h2 style="background-color: black"><font style="color:white"><a href=https://chaoticplay.itch.io/alice target="_blank">Download Alice</a></h2></font>
         <p><font size = "4">Alice,</font></p>
         <div class="a"><p><font size = "4">    There you are, we have been expecting you…</p></font></div>
         <div class="a"><p><font size = "4">     After the untimely death of your family from your house fire, we were beginning to think you had forgotten about us living here in Wonderland. Don’t worry though; we have been here, waiting for your return.</p></font></div>
