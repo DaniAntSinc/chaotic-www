@@ -5,6 +5,7 @@
   <title>
     Chaotic Play Games
   </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     img{
       display: block;
@@ -30,23 +31,138 @@
         margin: 0 auto;
         font-family: Tahoma, Verdana, Arial, sans-serif;
       }
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #242424;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: black;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ccc;
+      /* width = width of bar across screen - 100% would be across the screen */
+        width: 33%;
+        left: 0;
+        box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.5);
+        z-index: 1;
+      }
+
+      .dropdown-content .header {
+        background: Black;
+        padding: 10px;
+        color: white;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+      /* width = width of bar inside of .dropdown-content size, so it fills 100% of the 33% width */
+        width: 100%;
+        padding: 10px;
+        /*background-color: #ccc;*/
+        height: 175px;
+      }
+
+      .column a {
+        float: none;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .column a:hover {
+        background-color: #ccc;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          height: auto;
+        }
+
+      }
+
+      /*ending the zoom*/
   </style>
   </head>
   <body>
-    <div style = "background-color: black">
-      <a href=index.html><img src="pngTransparent.png" style="width:12.5%;"></a>
-      <div class = "container">
-          <div><h2><font color="white"><a href="index.html">HOME</a></h2></div><div><h2><a href="games.html">GAMES</a></div></h2><div><h2><a href="assets.html">ASSETS</a></div></h2><div><h2><a href="contact.html">CONTACT</a></font></h2></div>
-      </div>
-  </div>
-    <br></br>
-    <div style = "background-color: black"><center><font color="white">Chaotic. Fun. Interactive. Narrative.</font></center></div>
+    <div style = "background-color: #242424">
+    <a href=index.html><img src="pngTransparent.png" style="width:12.5%;"></a>
+    </div>
+    <div class="navbar">
 
+    <a href="index.html">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Games <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+              <a href="games.html">Full Releases</a>
+             <a href="gameJams.html">Game Jam Projects</a>
+              <a href="demoProj.html">Demo Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <a href="contact.html">About/Contact</a>
+    </div>
     <br></br>
 
     <center><p><b>The below text is from an Archive of Rabbithole Productions previous website - Rabbitholeprod.com - before it was rebranded to Chaotic Play</b></p></center>
     <center><p><b>The embedded videos and pictures didn't transfer correctly, but you can get the gist of what was on the website before it was taken down.</b></p></center>
     <center><p><b>It is a little sad to let all the work go on that site, but that is how we grow. </b></p></center>
+    <img src="RabbitHoleSite.png" style="width:50%";>
 <p><b>Games</b></p>
 <p><b>Alice</b></p>
 <p><b>Christmas 2017</b></p>
@@ -1734,7 +1850,24 @@
 <p>The written plan at the moment is to have 17 days in the school year - one day representing each week. I have been working on a demo to establish basic principals to ease in the integration into the final product. Those principals included - loading new floors, collectable pickups, spell learning, moving days forward and changing the weather to reflect the days. The goal is to create an experience of continuing the Hogwarts legacy long after the story of Harry Potter has concluded.</p>
 <br></br>
 <p>The ultimate stretch goal will be creating an international MMO where students can live and breath Hogwarts.</p>
-  </body>
+
+  <footer>
+    <br></br>
+    <br></br>
+    <br></br>
+
+          <div style = "background-color: #242424">
+          <div class = "container">
+              <div><h4><font color="white"><a href="index.html">Home</a></h4></div><div><h4><a href="games.html">Games</a></div></h4><div><h4><a href="contact.html">Contact</a></font></h4></div>
+          </div>
+          <a href=index.html><img src="pngTransparent.png" style="width:5%;"></a>
+                <center><font color="white"> <p>Est 2019. </font></p></center>
+          </div>
+
+
+        </footer>
+      </body>
+    </html>
 </html>
 
 <!-- This is a comment, this will not be on the website. -->

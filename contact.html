@@ -5,10 +5,8 @@
   <title>
     Welcome to Chaotic Play!
   </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    mark{background-color: black;
-        color: white;}
-
     img{
       display: block;
       margin-left: auto;
@@ -16,89 +14,228 @@
       width: 100%;
       height: auto;
         }
-        * {
-          box-sizing: border-box;
-          }
+        a {
+        color: white;
+        background-color: transparent;
+        text-decoration: underline;
+        }
     a:visited {
       color: white;
-      background-color: transparent;
       text-decoration: none;
     }
-    div.a{text-indent: 30px;}
     a:hover {
-      color: black;
-      background-color: white;
       text-decoration: underline;
     }
-    .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 775px;
-      }
-      a {
-      color: white;
-      background-color: transparent;
-      text-decoration: underline;
-      }
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
       {
         width: 35 em;
         margin: 0 auto;
         font-family: Tahoma, Verdana, Arial, sans-serif;
       }
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #242424;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: black;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ccc;
+      /* width = width of bar across screen - 100% would be across the screen */
+        width: 33%;
+        left: 0;
+        box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.5);
+        z-index: 1;
+      }
+
+      .dropdown-content .header {
+        background: Black;
+        padding: 10px;
+        color: white;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+      /* width = width of bar inside of .dropdown-content size, so it fills 100% of the 33% width */
+        width: 100%;
+        padding: 10px;
+        /*background-color: #ccc;*/
+        height: 175px;
+      }
+
+      .column2{
+        float: left;
+      /* width = width of bar inside of .dropdown-content size, so it fills 100% of the 33% width */
+        width: 50%;
+        padding: 10px;
+        /*background-color: #ccc;*/
+        height: 820px;
+      }
+
+      .column a {
+        float: none;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .column a:hover {
+        background-color: #ccc;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          height: auto;
+        }
+
+      }
+      /*this starts the zoom*/
+      .zoom {
+        transition: transform .2s;
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+      }
+
+      .zoom:hover {
+        -ms-transform: scale(1.01); /* IE 9 */
+        -webkit-transform: scale(1.01); /* Safari 3-8 */
+        transform: scale(1.01);
+      }
+
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      /*ending the zoom*/
   </style>
   </head>
   <body>
-    <div style = "background-color: black">
-      <a href=index.html><img src="pngTransparent.png" style="width:12.5%;"></a>
-      <div class = "container">
-          <div><h2><font color="white"><a href="index.html">HOME</a></h2></div><div><h2><a href="games.html">GAMES</a></div></h2><div><h2><a href="assets.html">ASSETS</a></div></h2><div><h2><a href="contact.html">CONTACT</a></font></h2></div>
-      </div>
-  </div>
-    <br></br>
-    <div style = "background-color: black"><center><font color="white">Chaotic. Fun. Interactive. Narrative.</font></center></div>
+    <div style = "background-color: #242424">
+    <a href=index.html><img src="pngTransparent.png" style="width:12.5%;"></a>
+    </div>
+    <div class="navbar">
 
-    <br></br>
+    <a href="index.html">Home</a>
 
-    <div class="row">
-      <div class="column" style="background-color:black">
-        <div class = "container2">
-          <div><img src="Capture92.png" width="300" height="250"></div><div><img src="d12.jpg" width="300" height="250"></div><div><img src="s12.jpg" width="300" height="250"></div>
-          <div><img src="a12.jpg" width="300" height="250"></div><div><img src="pngTransparent2.png" width="300" height="250"></div><div><img src="j12.jpg" width="300" height="250"></div>
-          <div><img src="e12.jpg" width="300" height="250"></div><div><img src="s122.jpg" width="300" height="250"></div><div><img src="t12.jpg" width="300" height="250"></div>
+    <div class="dropdown">
+        <button class="dropbtn">Games <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+              <a href="games.html">Full Releases</a>
+             <a href="gameJams.html">Game Jam Projects</a>
+              <a href="demoProj.html">Demo Projects</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="column">
-        <h1>The Studio</h1>
-        <p><div class="a"><font size = "4">Chaotic Play is a solo indie game studio created by Cassidy Noble. I have been making games off and on for the last 10 years giving them out as Christmas presents, participating in game jams, or making little projects for my own entertainment. </font></p></div>
-        <p><div class="a"><font size = "4">As I have progressed in my development, I've started to collect more and more ideas from games that I am inspired by (the Persona series, Rockstar, Stardew Valley, Animal Crossing, Sid Meier, and others) to create larger worlds and make them feel vibrant and lively.  </font></p></div>
+    <a href="contact.html">About/Contact</a>
+    </div>
+        <br></br>
+
+    <div class="row">
+      <div class="column2" style="background-color:black">
+
+        <div class = "container2">
+          <div><img src="Capture92.png" width="200" height="200"></div><div><img src="d12.jpg" width="200" height="200"></div><div><img src="s12.jpg" width="200" height="200"></div>
+          <div><img src="a12.jpg" width="200" height="200"></div><div><img src="pngTransparent.png" width="200" height="200"></div><div><img src="j12.jpg" width="200" height="200"></div>
+          <div><img src="e12.jpg" width="200" height="200"></div><div><img src="s122.jpg" width="200" height="200"></div><div><img src="t12.jpg" width="200" height="200"></div>
+        </div>
+      </div>
+      <div class="column2" style="background-color:#ccc">
+        <b><h1>The Studio</h1></b>
+        <p><div class="a"><font size = "4">Chaotic Play is a solo indie game studio created by Cassidy Noble. I have been making games off and on for the last 10 years giving them out as presents, participating in game jams, or making little projects for my own entertainment. </font></p></div>
+        <p><div class="a"><font size = "4">As I have progressed in my development, I've started to collect more and more ideas from games and companies that I am inspired by - the Persona series, Rockstar, NaughtyDog, Edmund McMillen, and others - to create large worlds that feel vibrant and lively.  </font></p></div>
         <p><div class="a"><font size = "4">The intent of this studio is to create games that are fun to play, but also a little out of the ordinary and stir some emotive response. I'm always open to working with people on various projects and the hope is this studio can start to grow to a small team to create passion projects together. </font></p></div>
-        <h1>Contact</h1>
+        <br></br>
+        <b><h1>Contact</h1></b>
         <p><div class="a"><font size = "4">As of right now, Chaotic Play isn't too big in social media. I do have a personal Youtube Channel I have been uploading progress videos on and you can email me and I will respond as soon as I can. </font></p></div></p>
         <p><b><div class="a"><font size = "4">Youtube: </b><a href = "https://www.youtube.com/channel/UChiHhjVEyRUi7TcqtyQTmPg/videos?view_as=subscriber"> <mark>Chaotic Play Youtube</mark></a></font></p></div></p>
-        <p><div class="a"><font size = "4"><b>Email:  </b>chaoticplayquestions@gmail.com</font></p></div></p>
-        <h1>Archive</h1>
-        <p><div class="a"><font size = "4">To see the information from Chaotic Play's previous name - Rabbithole Productions - please press the link below.</div></font></p>
-        <p><div class="a"><font size = "4"><a href = "archive.html"> <mark>Archive</mark></div></font></a></p>
+        <p><div class="a"><font size = "4"><b>Email: </b> <mark>chaoticplayquestions@gmail.com</font></mark></p></div></p>
+        <br></br>
+        <b><h1>Archive</h1></b>
+        <p><div class="a"><font size = "4">To see the information from Chaotic Play's previous name - <b>Rabbithole Productions</b> - please press the link below.</div></font></p>
+        <p><div class="a"><font size = "4"><a href = "archive.html"> <mark>Rabbithole Production Archive</mark></div></font></a></p>
       </div>
     </div>
   </body>
   <footer>
     <br></br>
-    <div style = "background-color: black">
-    <div class = "container">
-        <div><h4><font color="white"><a href="index.html">HOME</a></h4></div><div><h4><a href="games.html">GAMES</a></div></h4><div><h4><a href="assets.html">ASSETS</a></div></h4><div><h4><a href="contact.html">CONTACT</a></font></h4></div>
-    </div>
-    <a href=index.html><img src="pngTransparent.png" style="width:5%;"></a>
-          <center><font color="white"> <p>Est 2019. </font></p></center>
-    </div>
-  </footer>
-</html>
+    <br></br>
+    <br></br>
+
+          <div style = "background-color: #242424">
+          <div class = "container">
+              <div><h4><font color="white"><a href="index.html">Home</a></h4></div><div><h4><a href="games.html">Games</a></div></h4><div><h4><a href="contact.html">Contact</a></font></h4></div>
+          </div>
+          <a href=index.html><img src="pngTransparent.png" style="width:5%;"></a>
+                <center><font color="white"> <p>Est 2019. </font></p></center>
+          </div>
+
+
+        </footer>
+      </body>
+    </html>
 
 <!-- This is a comment, this will not be on the website. -->
 

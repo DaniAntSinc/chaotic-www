@@ -5,6 +5,7 @@
   <title>
     Chaotic Play Games
   </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
   img{
     display: block;
@@ -13,90 +14,197 @@
     width: 100%;
     height: auto;
       }
-  * {
-    box-sizing: border-box;
-    }
-    div.a{text-indent: 30px;}
-    a {
+      a {
+      color: white;
+      background-color: transparent;
+      text-decoration: underline;
+      }
+  a:visited {
     color: white;
-    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
     text-decoration: underline;
+  }
+    {
+      width: 35 em;
+      margin: 0 auto;
+      font-family: Tahoma, Verdana, Arial, sans-serif;
     }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #242424;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: black;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ccc;
+    /* width = width of bar across screen - 100% would be across the screen */
+      width: 33%;
+      left: 0;
+      box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+
+    .dropdown-content .header {
+      background: Black;
+      padding: 10px;
+      color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    /* Create three equal columns that floats next to each other */
     .column {
+      float: left;
+    /* width = width of bar inside of .dropdown-content size, so it fills 100% of the 33% width */
+      width: 100%;
+      padding: 5px;
+      /*background-color: #ccc;*/
+      height: 175px;
+    }
+
+    .column a {
+      float: none;
+      color: black;
+      padding: 15px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .column a:hover {
+      background-color: #ccc;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column2 {
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+    .column2 {
         float: left;
         width: 50%;
         padding: 10px;
         height: 1000px;
       }
 
-    .row:after {
+    .row2:after {
         content: "";
         display: table;
         clear: both;
       }
-      a:visited {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:hover {
-        color: black;
-        background-color: white;
-        text-decoration: underline;
-      }
-        {
-          width: 35 em;
-          margin: 0 auto;
-          font-family: Verdana, Arial, sans-serif;
-        }
   </style>
   </head>
-  <body>
-    <div style = "background-color: black">
-      <a href=index.html><img src="pngTransparent.png" style="width:12.5%;"></a>
-      <div class = "container">
-          <div><h2><font color="white"><a href="index.html">HOME</a></h2></div><div><h2><a href="games.html">GAMES</a></div></h2><div><h2><a href="assets.html">ASSETS</a></div></h2><div><h2><a href="contact.html">CONTACT</a></font></h2></div>
-      </div>
+  <div style = "background-color: #242424">
+  <a href=index.html><img src="pngTransparent.png" style="width:12.5%;"></a>
   </div>
-    <br></br>
-    <div style = "background-color: black"><center><font color="white">Chaotic. Fun. Interactive. Narrative. </font></center></div>
-    <br></br>
+  <div class="navbar">
 
-    <div class="row">
-      <div class="column" >
-        <center><img src="BagOfHolding.jpg" width=700 height="600"></center>
-        <br></br>
-      <!--  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/0X02tQZQBaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center> -->
+  <a href="index.html">Home</a>
+
+  <div class="dropdown">
+      <button class="dropbtn">Games <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column">
+            <a href="games.html">Full Releases</a>
+           <a href="gameJams.html">Game Jam Projects</a>
+            <a href="demoProj.html">Demo Projects</a>
+          </div>
+        </div>
       </div>
-      <div class="column">
-        <center><font-family = "Verdana"><h1><font size = "10">Bag Of Holding</h1></font></center>
+    </div>
+  <a href="contact.html">About/Contact</a>
+  </div>
+      <br></br>
+
+    <div class="row2">
+      <div class="column2" >
+        <br></br>
+        <div style = 'text-align:center'><iframe width="750" height="500" src="https://www.youtube.com/embed/IPY1fHfnQYM"  frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      </div>
+      <div class="column2">
+        <center><font-family = "Verdana"><h1><font size = "10">Bag of Holding</h1></font></center>
         <center><font color = "grey"><h3>Get Now:</h3></font></center>
-        <h2 style="background-color: black"><font color="white"><a href=https://chaoticplay.itch.io/bag-of-holding target="_blank">Download Bag of Holding</a></h2></font>
+        <h2 style="background-color: #242424"><font color="white"><a href=https://chaoticplay.itch.io/bag-of-holding target="_blank">Download Bag of Holding</a></h2></font>
         <div class="a"><p><font size = "4">    It is just a  normal day in your normally quiet village of Arcton. You, Mohini, are sitting beneath the town's mythical Baobob tree. The tree drops a bag for you. Upon further instructions, the bag indicates, it can hold one and ONLY ONE item in it, but that item can be of any size. </p></font></div>
         <div class="a"><p><font size = "4">    Would you like to assist your grandmother with her groceries? Maybe the town's fountain needs to be moved? Perhaps the King would like to take  a swim in the ocean? Maybe the new hotel location just isn't working for you.  </p></font></div>
         <div class="a"><p><font size = "4">    Be careful though, the bag indicated that if you are not in good standing with your community, there will be consequences. </p></font></div>
-        <div class="a"><p><font size = "4">    This game was submit for the GMTK 2019 Game Jam. </p></font></div>
+        <div class="a"><p><font size = "4">    This game was submit for the GMTK 2019 theme - "Only One". </p></font></div>
 
-        <h2 style="background-color: black">""</h2></font>
-        <div class ="container"><div><img src="b1.jpg" width="200" height="200"></div><div><img src="b2.jpg"width="200" height="200"></div><div><img src="b3.jpg"width="200" height="200"></div><div><img src="b4.jpg"width="200" height="200"></div></div>
-        <h2 style="background-color: black">""</h2></font>
-        <center><p>Released: August 4th, 2019</p></center>
-                <h2 style="background-color: black">""</h2></font>
+        <h2 style="background-color: #242424"><font color="white">Screenshots</font></h2></font>
+        <div class ="container3"><div><img src="b1.jpg" width="200" height="150"></div><div><img src="b2.jpg"width="200" height="200"></div><div><img src="b3.jpg"width="200" height="200"></div><div><img src="b4.jpg"width="200" height="200"></div></div>
+        <h2 style="background-color: #242424"><font color="white">Original Release Date</font></h2></font>
+        <center><p>August 4, 2019 - Version 1.0</p></center>
+                <br></br>
                 <br></br>
       </div>
     </div>
-
+    <footer>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div style = "background-color: #242424">
+      <div class = "container">
+          <div><h4><font color="white"><a href="index.html">Home</a></h4></div><div><h4><a href="games.html">Games</a></div></h4><div><h4><a href="contact.html">Contact</a></font></h4></div>
+      </div>
+      <a href=index.html><img src="pngTransparent.png" style="width:5%;"></a>
+            <center><font color="white"> <p>Est 2019. </font></p></center>
+      </div>
+    </footer>
   </body>
-  <footer>
-    <br></br>
-    <div style = "background-color: black">
-    <div class = "container">
-        <div><h4><font color="white"><a href="index.html">HOME</a></h4></div><div><h4><a href="games.html">GAMES</a></div></h4><div><h4><a href="assets.html">ASSETS</a></div></h4><div><h4><a href="contact.html">CONTACT</a></font></h4></div>
-    </div>
-    <a href=index.html><img src="pngTransparent.png" style="width:5%;"></a>
-          <center><font color="white"> <p>Est 2019. </font></p></center>
-    </div>
-  </footer>
 </html>
 
 <!-- This is a comment, this will not be on the website. -->

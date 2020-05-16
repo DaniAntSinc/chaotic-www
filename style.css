@@ -1,6 +1,6 @@
 h2 {
-  font-family: Verdana, "Times New Roman";
-  font-size: 22px;
+  font-family: Verdana,"Times New Roman";
+  font-size: 40px;
   font-style: normal;
   text-align: center;
 }
@@ -9,15 +9,15 @@ h2 {
   display: inline-block;
       *display: inline; /* For IE7 */
       zoom: 1; /* Trigger hasLayout */
-      width: 25%;
+      width: 33.3%;
       text-align: center;
 }
 
 .container2> div{
   display: inline-block;
-      *display: inline; /* For IE7 */
-      zoom: 1.24; /* Trigger hasLayout */
-      width: 33%;
+      *display: block; /* For IE7 */
+      zoom: 1; /* Trigger hasLayout */
+      width: 33.3%;
       text-align: center;
 }
 
